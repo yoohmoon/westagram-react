@@ -1,7 +1,10 @@
 import React from "react";
 import "./Login.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
   return (
     <div className="mainWrapper">
       <main>
@@ -21,7 +24,14 @@ function Login() {
               <input type="password" minlength="1" placeholder="비밀번호" />
             </div>
             <div>
-              <button>로그인</button>
+              <button
+              /* onClick={() => {
+                  navigate("/main");
+                }} */
+              >
+                <Link to="/main">로그인</Link>
+                {/* 로그인 */}
+              </button>
             </div>
           </form>
           <a href="#">비밀번호를 잊으셨나요?</a>
