@@ -1,9 +1,9 @@
 import React from "react";
-import "./Main.css";
+import "./Main.scss";
 
 function Main() {
   return (
-    <>
+    <div className="main">
       <header id="gnb">
         <div>
           <h1 id="logo">
@@ -270,7 +270,7 @@ function Main() {
           </footer>
         </aside>
       </main>
-    </>
+    </div>
   );
 }
 

@@ -1,74 +1,76 @@
-header#gnb {
-  position: sticky;
-  top: 0;
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main {
+  #gnb {
+    position: sticky;
+    top: 0;
 
-  padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+    padding: 15px 100px;
 
-  z-index: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+
+    z-index: 1;
+
+    div {
+      #logo {
+        font-family: "Lobster", cursive;
+        font-size: 1.8rem;
+      }
+    }
+
+    .searchContainer {
+      position: relative;
+      display: inline-block;
+
+      /* border: 1px solid #bbb; */
+      width: 200px;
+      height: 30px;
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        border: none;
+        border-radius: 5px;
+
+        background-color: #efefef;
+
+        outline: none;
+      }
+
+      .searchWrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5px;
+        width: 100%;
+        height: 100%;
+        color: #737373;
+        font-size: 0.8rem;
+      }
+    }
+
+    .navIconsContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 }
 
-h1#logo {
-  font-family: "Lobster", cursive;
-  font-size: 1.8rem;
-}
-
-/* 검색창을 묶어주는 태그 */
-.searchContainer {
-  position: relative;
-  display: inline-block;
-
-  /* border: 1px solid #bbb; */
-  width: 200px;
-  height: 30px;
-}
-
-.searchContainer input {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  border: none;
-  border-radius: 5px;
-
-  background-color: #efefef;
-
-  outline: none;
-}
-
-/* header div:nth-of-type(2) {
-}
-
-header div:nth-of-type(2) > input {
-} */
-
-.searchWrapper {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5px;
-  width: 100%;
-  height: 100%;
-  color: #737373;
-  font-size: 0.8rem;
-}
-
-nav.navIconsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
+nav
 
 /* main 영역부터 다시 하기!!!!!! */
 
