@@ -20,22 +20,22 @@ function Main() {
         <nav className="navIconsContainer">
           <a href="#">
             <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
               alt="navigation icon"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
               width="25px"
             />
           </a>
           <a href="">
             <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               alt="heart icon"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               width="25px"
             />
           </a>
           <a href="">
             <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
               alt="user profile icon"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
               width="25px"
             />
           </a>
@@ -48,8 +48,8 @@ function Main() {
               <li>
                 <div>
                   <img
+                    alt="story poster profile picture"
                     src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="story poster profile pic"
                     className="profileImg"
                   />
                 </div>
@@ -58,8 +58,8 @@ function Main() {
               <li>
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt="story poster profile pic"
+                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     className="profileImg"
                   />
                 </div>
@@ -68,8 +68,8 @@ function Main() {
               <li>
                 <div>
                   <img
+                    alt="story poster profile picture"
                     src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="story poster profile pic"
                     className="profileImg"
                   />
                 </div>
@@ -78,8 +78,8 @@ function Main() {
               <li>
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt="story poster profile pic"
+                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     className="profileImg"
                   />
                 </div>
@@ -88,8 +88,8 @@ function Main() {
               <li>
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt="story poster profile pic"
+                    src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     className="profileImg"
                   />
                 </div>
@@ -102,8 +102,8 @@ function Main() {
               <div className="postHeader">
                 <div className="posterInfoWrapper">
                   <img
-                    src="/images/profile_photo.jpg"
                     alt="user profile photo"
+                    src="/images/profile_photo.jpg"
                     className="profileImg"
                   />
                   <h2>software_engineer_wannabe</h2>
@@ -118,9 +118,8 @@ function Main() {
                   <span></span>
                 </div>
               </div>
-              <div className="postedImg">
-                <img src="/images/post_dog_photo.jpg" alt="cute doggie pic" />
-              </div>
+              <img src="/images/post_dog_photo.jpg" alt="cute doggie picture" />
+              <div className="postedImg"></div>
               <div class="postContentContainer">
                 <div class="interactionIconsWrapper">
                   <div class="leftIcons">
@@ -132,8 +131,8 @@ function Main() {
                 </div>
                 <div class="likedUsers">
                   <img
-                    src="https://images.unsplash.com/photo-1620194544222-8c956ca15f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
                     alt="user profile image"
+                    src="https://images.unsplash.com/photo-1620194544222-8c956ca15f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
                     class="profileImg"
                   />
                   <p>
@@ -174,8 +173,8 @@ function Main() {
         <aside>
           <div class="currentUserInfoContainer">
             <img
-              src="/images/profile_photo.jpg"
               alt="user profile photo"
+              src="/images/profile_photo.jpg"
               class="profileImg"
             />
             <div>
@@ -192,8 +191,8 @@ function Main() {
               <li>
                 <div class="userInfoWrapper">
                   <img
+                    alt="first recommended user profile picture"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="first recommended user profile pic"
                     class="profileImg"
                   />
                   <div>
@@ -207,8 +206,8 @@ function Main() {
               <li>
                 <div class="userInfoWrapper">
                   <img
+                    alt="first recommended user profile picture"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="first recommended user profile pic"
                     class="profileImg"
                   />
                   <div>
@@ -221,8 +220,8 @@ function Main() {
               <li>
                 <div class="userInfoWrapper">
                   <img
+                    alt="first recommended user profile picture"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    alt="first recommended user profile pic"
                     class="profileImg"
                   />
                   <div>
