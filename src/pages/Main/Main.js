@@ -3,7 +3,7 @@ import "./Main.scss";
 
 function Main() {
   return (
-    <div className="main">
+    <div className="mainPageContainer">
       <header id="gnb">
         <div>
           <h1 id="logo">
@@ -42,7 +42,7 @@ function Main() {
         </nav>
       </header>
       <main>
-        <div className="mainLeftColumnWrap">
+        <div className="leftColumnWrap">
           <div className="storiesContainer">
             <ul>
               <li>
@@ -118,10 +118,15 @@ function Main() {
                   <span></span>
                 </div>
               </div>
-              <img src="/images/post_dog_photo.jpg" alt="cute doggie picture" />
-              <div className="postedImg"></div>
-              <div class="postContentContainer">
-                <div class="interactionIconsWrapper">
+
+              <div className="postedImg">
+                <img
+                  src="/images/post_dog_photo.jpg"
+                  alt="cute doggie picture"
+                />
+              </div>
+              <div className="postContentContainer">
+                <div className="interactionIconsWrapper">
                   <div class="leftIcons">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-comment fa-flip-horizontal"></i>
@@ -129,7 +134,7 @@ function Main() {
                   </div>
                   <i class="fa-regular fa-bookmark"></i>
                 </div>
-                <div class="likedUsers">
+                <div className="likedUsers">
                   <img
                     alt="user profile image"
                     src="https://images.unsplash.com/photo-1620194544222-8c956ca15f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
@@ -140,29 +145,29 @@ function Main() {
                     <span class="bold">외 213명</span>이 좋아합니다
                   </p>
                 </div>
-                <div class="postContent">
-                  <div class="postContentWrapper">
-                    <span class="posterName bold">
+                <div className="postContent">
+                  <div className="postContentWrapper">
+                    <span className="posterName">
                       software_engineer_wannabe
                     </span>
                     <p>
                       오늘도 감사한 하루💖<span>...</span>
                     </p>
                   </div>
-                  <p class="moreContent more">더 보기</p>
+                  <p className="moreContent">더 보기</p>
                 </div>
               </div>
-              <div class="commentsList">
+              <div className="commentsList">
                 <div id="uploadedCommentsBox">
-                  <p class="more">댓글 3개 모두 보기</p>
+                  <p className="more">댓글 3개 모두 보기</p>
                 </div>
-                <form class="submitReply" action="">
+                <form action="">
                   <input
-                    class="inputReply"
+                    className="inputReply"
                     type="text"
                     placeholder="댓글 달기..."
                   />
-                  <button type="submit" class="submit bold debuttonize">
+                  <button type="submit" className="submit bold debuttonize">
                     게시
                   </button>
                 </form>
@@ -171,65 +176,65 @@ function Main() {
           </section>
         </div>
         <aside>
-          <div class="currentUserInfoContainer">
+          <div className="currentUserInfoContainer">
             <img
               alt="user profile photo"
               src="/images/profile_photo.jpg"
-              class="profileImg"
+              className="profileImg"
             />
             <div>
               <p>software_engineer_wannabe</p>
               <p>S.E. based in Aus | from S.Korea</p>
             </div>
           </div>
-          <div class="recommendedUserList">
+          <div className="recommendedUserList">
             <div>
-              <h3 class="bold">회원님을 위한 추천</h3>
-              <span class="bold">모두 보기</span>
+              <h3 className="bold">회원님을 위한 추천</h3>
+              <span className="bold">모두 보기</span>
             </div>
             <ul>
               <li>
-                <div class="userInfoWrapper">
+                <div className="userInfoWrapper">
                   <img
                     alt="first recommended user profile picture"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    class="profileImg"
+                    className="profileImg"
                   />
                   <div>
-                    <h4 class="bold">tellmemoreaboutu</h4>
+                    <h4 className="bold">tellmemoreaboutu</h4>
                     <p>회원님이 팔로우합니다</p>
                   </div>
                 </div>
-                <button class="debuttonize">팔로우</button>
+                <button className="debuttonize">팔로우</button>
               </li>
 
               <li>
-                <div class="userInfoWrapper">
+                <div className="userInfoWrapper">
                   <img
                     alt="first recommended user profile picture"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    class="profileImg"
+                    className="profileImg"
                   />
                   <div>
-                    <h4 class="bold">tellmemoreaboutu</h4>
+                    <h4 className="bold">tellmemoreaboutu</h4>
                     <p>회원님이 팔로우합니다</p>
                   </div>
                 </div>
-                <button class="debuttonize">팔로우</button>
+                <button className="debuttonize">팔로우</button>
               </li>
               <li>
-                <div class="userInfoWrapper">
+                <div className="userInfoWrapper">
                   <img
                     alt="first recommended user profile picture"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                    class="profileImg"
+                    className="profileImg"
                   />
                   <div>
-                    <h4 class="bold">tellmemoreaboutu</h4>
+                    <h4 className="bold">tellmemoreaboutu</h4>
                     <p>회원님이 팔로우합니다</p>
                   </div>
                 </div>
-                <button class="debuttonize">팔로우</button>
+                <button className="debuttonize">팔로우</button>
               </li>
             </ul>
           </div>

@@ -1,7 +1,22 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixin.scss";
 
-.main {
+/* .profileImg {
+  // border-radius: 50%;
+  // border: 1px solid #ddd;
+} */
+
+/* main 영역부터 다시 하기!!!!!! */
+/*.dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000;
+}
+ */
+
+.mainPageContainer {
   #gnb {
     position: sticky;
     top: 0;
@@ -68,229 +83,221 @@
       gap: 20px;
     }
   }
+
+  main {
+    @include flex(_, center, _, 30px);
+    padding: 50px 0;
+
+    background-color: $bgColor;
+
+    .leftColumnWrap {
+      @include flex(column, _, center, 10px);
+      margin-right: 50px;
+
+      .storiesContainer {
+        margin-bottom: 35px;
+
+        ul {
+          display: flex;
+          gap: 17px;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+
+            div {
+              position: relative;
+
+              width: 80px;
+              height: 80px;
+
+              margin-bottom: 5px;
+
+              border: 3px solid transparent;
+              border-radius: 50%;
+
+              background-image: linear-gradient(#fff, #fff),
+                linear-gradient(to right, red 0%, orange 100%);
+              background-origin: border-box;
+              background-clip: content-box, border-box;
+
+              img {
+                position: absolute;
+                top: 2.5px;
+                left: 2.5px;
+                width: 70px;
+                height: 70px;
+              }
+            }
+          }
+        }
+      }
+
+      .postsContainer {
+        // bottom-up 방식이 아닌 것 같다
+        width: 630px;
+        border: 1.5px solid tomato;
+
+        article {
+          border: 1.5px solid $bdColor;
+          background-color: #fff;
+
+          .postHeader {
+            @include flex(_, space-between, center, _);
+            padding: 10px;
+
+            .posterInfoWrapper {
+              @include flex(_, _, center, 13px);
+
+              img {
+                width: 32px;
+                height: 32px;
+              }
+
+              .createdAt {
+                @include flex(_, _, center, 3px);
+                width: 50px;
+                color: $greyText;
+
+                span {
+                  background-color: $greyText;
+                }
+              }
+            }
+
+            .moreOptionsWrapper {
+              // 영역 내부에 포함된 span 자식들(점)을 세로 중앙 정렬시키는 코드
+              @include flex(_, _, center, _);
+              cursor: pointer;
+
+              span {
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                border: 1px solid #000;
+                border-radius: 50%;
+                background-color: #000;
+
+                &:nth-of-type(2) {
+                  margin-left: 3px;
+                }
+
+                &:nth-of-type(3) {
+                  margin-left: 3px;
+                }
+
+                /* 
+                //  & + &  안되는 이유 찾기!
+                & + & {
+                  margin-left: 33px;
+                }
+                */
+              }
+            }
+          }
+
+          .postedImg {
+            // width: 100%;
+            // 이미 div태그임,,,? -> 불필요한 속성 제거 리팩토링
+
+            img {
+              width: 100%;
+              -webkit-user-drag: none;
+            }
+          }
+
+          .postContentContainer {
+            padding: 8px;
+
+            .interactionIconsWrapper {
+              @include flex(_, space-between, center, _);
+
+              .leftIcons {
+                i {
+                  cursor: pointer;
+
+                  // 이거 왜 안되는지 알아보기!!
+                  // & + & {
+                  //   margin-left: 5px;
+                  // }
+                }
+
+                i + i {
+                  margin-left: 5px;
+                }
+              }
+            }
+
+            .likedUsers {
+              @include flex(_, _, center, 3px);
+              margin: 8px 0;
+
+              img {
+                width: 15px;
+                height: 15px;
+              }
+
+              .bold {
+                font-weight: 700;
+              }
+            }
+
+            .postContent {
+              .postContentWrapper {
+                @include flex(_, _, _, 5px);
+
+                .posterName {
+                  font-weight: 700;
+                }
+              }
+
+              .moreContent {
+                margin-top: 2px;
+                color: $greyText;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .commentsList {
+            border-top: 1px solid $bdColor;
+
+            #uploadedCommentsBox {
+              // @include flex(column, center, _, 3px);
+              padding: 8px;
+              .more {
+                color: $greyText;
+                cursor: pointer;
+              }
+            }
+
+            form {
+              @include flex(_, space-between, center, _);
+              width: 100%;
+
+              input {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                outline: none;
+              }
+
+              button {
+                width: 7%;
+                // font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-nav
-
-/* main 영역부터 다시 하기!!!!!! */
-
-main {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-
-  padding: 50px 0;
-
-  background-color: #efefef;
-}
-
-.mainLeftColumnWrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
-  margin-right: 50px;
-}
-
-/* 스토리 영역의 시작 */
-.storiesContainer {
-  margin-bottom: 35px;
-}
-
-.storiesContainer ul {
-  display: flex;
-  gap: 17px;
-}
-
-.storiesContainer li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  text-align: center;
-
-  cursor: pointer;
-}
-
-.storiesContainer li > div {
-  position: relative;
-
-  width: 80px;
-  height: 80px;
-
-  margin-bottom: 5px;
-
-  border: 3px solid transparent;
-  border-radius: 50%;
-
-  background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, red 0%, orange 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
-.storiesContainer img {
-  position: absolute;
-  top: 2.5px;
-  left: 2.5px;
-  width: 70px;
-  height: 70px;
-}
-
-.profileImg {
-  border-radius: 50%;
-  border: 1px solid #ddd;
-}
-
-.postsContainer {
-  width: 630px;
-  /* border: 1.5px solid #ddd; */
-}
-
-.postsContainer article {
-  border: 1.5px solid #ddd;
-  background-color: #fff;
-}
-
-.postHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 10px;
-}
-
-.postHeader img {
-  width: 32px;
-  height: 32px;
-}
-
-.posterInfoWrapper {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
-
-.createdAt {
-  width: 50px;
-
-  display: flex;
-  align-items: center;
-  gap: 3px;
-
-  color: #737373;
-}
-
-.createdAt span {
-  background-color: #737373;
-}
-
-.moreOptionsWrapper {
-  /* 영역 내부에 포함된 span 자식들(점)을 세로 중앙 정렬시키는 코드 */
-  display: flex;
-  align-items: center;
-
-  cursor: pointer;
-}
-
-.dot {
-  display: inline-block;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background-color: #000;
-}
-
-.moreOptionsWrapper span {
-  display: inline-block;
-  width: 3px;
-  height: 3px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  background-color: #000;
-}
-
-.moreOptionsWrapper span + span {
-  margin-left: 3px;
-}
-
-.likedUsers {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-
-  margin: 8px 0;
-}
-
-.likedUsers img {
-  width: 15px;
-  height: 15px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-/* 하나의 포스트 = article 내의 post 메인 이미지 영역 */
-.postedImg {
-  width: 100%;
-}
-
-.postedImg img {
-  width: 100%;
-
-  /* 용도 찾아보기 */
-  /* user-select: none; */
-}
-
-/* 하나의 포스트 = article 내의 post 하단 정보 영역 */
-.postContentContainer {
-  padding: 8px;
-}
-
-.interactionIconsWrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.interactionIconsWrapper i {
-  cursor: pointer;
-}
-
-.leftIcons i + i {
-  margin-left: 5px;
-}
-
-.postContent {
-}
-
-.postContentWrapper {
-  display: flex;
-  gap: 5px;
-}
-
-.more {
-  color: #737373;
-  cursor: pointer;
-}
-
-.postContent .moreContent {
-}
-
-.commentsList {
-  border-top: 1px solid #ddd;
-}
-
-#uploadedCommentsBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
-  padding: 8px;
-}
-
+/* // 댓글 달기 기능 구현 관련 css 속성
 #uploadedCommentsBox ul li {
   display: flex;
   justify-content: space-between;
@@ -304,28 +311,7 @@ main {
   font-size: 0.9rem;
 
   margin-bottom: 7px;
-}
-
-.commentsList form {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.commentsList input {
-  width: 100%;
-
-  padding: 10px;
-
-  border: none;
-
-  outline: none;
-}
-
-.commentsList button {
-  width: 7%;
-}
+} */
 
 /* aside 영역 시작 */
 aside {
