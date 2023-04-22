@@ -1,5 +1,5 @@
-import React from "react";
-import "./Main.scss";
+import React from 'react';
+import './Main.scss';
 
 function Main() {
   return (
@@ -13,7 +13,7 @@ function Main() {
         <div className="searchContainer">
           <input type="text" />
           <div className="searchWrapper">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass" />
             <span>검색</span>
           </div>
         </div>
@@ -108,14 +108,15 @@ function Main() {
                   />
                   <h2>software_engineer_wannabe</h2>
                   <div className="createdAt">
-                    <span className="dot"></span>4일
-                    <span className="dot"></span>
+                    <span className="dot" />
+                    4일
+                    <span className="dot" />
                   </div>
                 </div>
                 <div className="moreOptionsWrapper">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <span />
+                  <span />
+                  <span />
                 </div>
               </div>
 
@@ -128,11 +129,11 @@ function Main() {
               <div className="postContentContainer">
                 <div className="interactionIconsWrapper">
                   <div class="leftIcons">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-comment fa-flip-horizontal"></i>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <i class="fa-regular fa-heart" />
+                    <i class="fa-regular fa-comment fa-flip-horizontal" />
+                    <i class="fa-solid fa-arrow-up-right-from-square" />
                   </div>
-                  <i class="fa-regular fa-bookmark"></i>
+                  <i class="fa-regular fa-bookmark" />
                 </div>
                 <div className="likedUsers">
                   <img
@@ -196,7 +197,7 @@ function Main() {
               <li>
                 <div className="userInfoWrapper">
                   <img
-                    alt="first recommended user profile picture"
+                    alt="first recommended user profile"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                     className="profileImg"
                   />
