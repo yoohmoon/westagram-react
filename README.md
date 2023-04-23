@@ -1,6 +1,14 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key가 없다면?
+Warning : Each child in a list should have a unique "key".
+리액트는 어떤 DOM요소에 .map을 실행해야 하는지 모른다.
+key로는 array를 unique하게 구별할 수 있는 것을 사용한다. 주로, id를 사용한다(Backend에서 넘어오는 정보는 주로 id를 포함하고 있기 때문에)
+array의 index를 사용하는 것은 지양해야하나, 다른 정보로 key로 사용할 게 없는 경우엔, index를 사용한다.
+
+뒤에 추가한다면, 순서가 보장되었기 때문에 상관 없지만,
+만약 앞에 추가하게 된다면 index가 변하게 된다. -> 순서가 일정하지 않기 때문에, 각자의 unique한 값을 key로 사용해야 제대로 작동하게 된다.
+따라서 되도록이면 index가 아닌, id와 같이 고유한 값을 사용하는 것이 권장된다.
 
 ## Available Scripts
 
